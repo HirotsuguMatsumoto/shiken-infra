@@ -7,6 +7,7 @@ import { Route } from "react-router";
 import MyLayout from "./components/AdminLayout";
 import Dashboard from "./pages/Dashboard";
 import { ItemCreate, ItemEdit, ItemList } from "./pages/Items";
+import { CompanyCreate, CompanyEdit, CompanyList } from "./pages/Companys";
 import LoginPage from "./pages/Login";
 import { ProfileEdit } from "./pages/ProfileEdit";
 import Register from "./pages/Register";
@@ -57,10 +58,18 @@ const App = () => {
         ) : null,
         <Resource
           name="items"
-          options={{ label: "Items2" }}
+          options={{ label: "Items" }}
           list={ItemList}
           edit={ItemEdit}
           create={ItemCreate}
+          icon={PostIcon}
+        />,
+        <Resource
+          name="companys"
+          options={{ label: "Companys" }}
+          list={CompanyList}
+          edit={CompanyEdit}
+          create={CompanyCreate}
           icon={PostIcon}
         />,
       ]}
