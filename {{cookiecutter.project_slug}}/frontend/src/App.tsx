@@ -1,6 +1,8 @@
+import PersonIcon from "@mui/icons-material/Person";
+import PostIcon from "@mui/icons-material/PostAdd";
 import { createBrowserHistory as createHistory } from "history";
 import simpleRestProvider from "ra-data-simple-rest";
-import { Admin, fetchUtils, Resource, CustomRoutes } from "react-admin";
+import { Admin, CustomRoutes, fetchUtils, Resource } from "react-admin";
 import { Route } from "react-router";
 import MyLayout from "./components/AdminLayout";
 import Dashboard from "./pages/Dashboard";
@@ -11,8 +13,6 @@ import Register from "./pages/Register";
 import { UserEdit, UserList } from "./pages/Users";
 import authProvider from "./providers/authProvider";
 import { basePath } from "./providers/env";
-import PostIcon from "@mui/icons-material/PostAdd";
-import PersonIcon from "@mui/icons-material/Person";
 
 const httpClient = (url: string, options: any = {}) => {
   options.user = {
@@ -57,7 +57,7 @@ const App = () => {
         ) : null,
         <Resource
           name="items"
-          options={{ label: "Items" }}
+          options={{ label: "Items2" }}
           list={ItemList}
           edit={ItemEdit}
           create={ItemCreate}
