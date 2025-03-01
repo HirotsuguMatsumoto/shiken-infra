@@ -8,6 +8,9 @@
 
 A FastAPI based starter that relies heavily on existing plugins/frameworks. Integrates with OpenAPI Generator for a Typescript client, FastAPI Users for authentication, async-first with SQLAlchemy 2.0.
 
+test
+
+test
 ---
 
 ## Features
