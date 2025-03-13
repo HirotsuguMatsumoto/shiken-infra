@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  backend:
+    image: "shiken-demo-backend:latest"
+
+  frontend:
+    image: "shiken-demo-frontend:latest"
