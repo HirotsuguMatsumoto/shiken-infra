@@ -1,0 +1,6 @@
+services:
+  backend:
+    image: "shiken-infra-backend:latest"
+
+  frontend:
+    image: "shiken-infra-frontend:latest"
